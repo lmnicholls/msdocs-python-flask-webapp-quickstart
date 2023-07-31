@@ -7,6 +7,10 @@ trigger:
 - main
 
 pool: myAgentPool
+variables:
+  azureServiceConnectionId: myServiceConnection
+  webAppName: pythonflaskappsample
+  projectRoot: $(System.DefaultWorkingDirectory)
 
 stages:
 - stage: Build
